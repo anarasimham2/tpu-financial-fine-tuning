@@ -12,7 +12,7 @@ The project transforms unstructured 10-K text into a structured Q&A dataset wher
 
 ---
 
-## 🛠 Synthetic Date Preparation
+## 🛠 Synthetic Data Preparation
 
 The pipeline consists of three main automated steps:
 
