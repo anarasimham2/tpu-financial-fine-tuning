@@ -110,6 +110,17 @@ python3 -m MaxText.train MaxText/configs/base.yml \
     steps=700
 ```
 
+### 4. Convert fine-tuned Orbax checkpoint into Safetensors checkpoint
+To facilitate the subsequent inference stage in TPU vLLM, in this we convert the Orbax checkpoint into Safetensors checkpoint
+
+ ```bash
+python3 -m MaxText.utils.ckpt_conversion.to_huggingface MaxText/configs/base.yml \
+    model_name=$MODEL_NAME \
+    hf_access_token=$HF_TOKEN \
+    load_parameters_path=gs://$BUCKET_NAME/output/my_finetune_runner/checkpoints/29/items \
+    base_output_directory=/dev/shm/my-finetuned-model-safetensor \ scan_layers=true
+```
+
 ---
 
 ## 🚀 TPU vLLM Inference & Evaluation
