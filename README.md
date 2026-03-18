@@ -12,7 +12,7 @@ The project transforms unstructured 10-K text into a structured Q&A dataset wher
 
 ---
 
-## 🛠 Workflow
+## 🛠 Synthetic Date Preparation
 
 The pipeline consists of three main automated steps:
 
@@ -48,7 +48,7 @@ python3 convert_jsonl_to_arrayrecord.py \
 
 ---
 
-## 🏗 Training & Infrastructure
+## 🏗 Fine Tuning with Jax and Maxtext
 
 ### 1. Provisioning Resources
 Set up the TPU VM and Google Cloud Storage (GCS) bucket.
@@ -112,9 +112,9 @@ python3 -m MaxText.train MaxText/configs/base.yml \
 
 ---
 
-## 🚀 Inference & Evaluation
+## 🚀 TPU vLLM Inference & Evaluation
 
-### 1. Serve with vLLM
+### 1. Serve with TPU vLLM
 Once fine-tuning is complete, convert the checkpoint to Safetensors and serve via vLLM.
 
 ```bash
