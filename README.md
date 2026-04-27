@@ -3,7 +3,7 @@
 
 This repository provides a streamlined, professional pipeline for transforming raw **SEC 10-K filings** into a high-quality, **Chain-of-Thought (CoT)** dataset. This data is designed for fine-tuning Large Language Models (LLMs) to perform complex financial analysis.
 
-This repository supports the associated [fine-tuning blog post]([url](https://medium.com/@ashish.narasimham/financial-analysis-across-a-10-k-document-corpus-language-fine-tuning-with-tpu-and-maxtext-6d57a3d0eda2)).
+This repository supports the associated [fine-tuning blog post](https://medium.com/@ashish.narasimham/financial-analysis-across-a-10-k-document-corpus-language-fine-tuning-with-tpu-and-maxtext-6d57a3d0eda2).
 
 ## 📈 Overview
 
